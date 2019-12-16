@@ -21,19 +21,19 @@ public class RomanNumeralTestWithBeforeEach {
 
     @Test
     public void numberWithManyDigits() {
-        int result = roman.convert("VIII");
-        Assertions.assertEquals(8, result);
+        int result = roman.convert("XIX");
+        Assertions.assertEquals(19, result);
     }
 
     @Test
     public void numberWithSubtractiveNotation() {
-        int result = roman.convert("IV");
-        Assertions.assertEquals(4, result);
+        int result = roman.convert("IX");
+        Assertions.assertEquals(9, result);
     }
 
     @Test
     public void numberWithAndWithoutSubtractiveNotation() {
         int result = roman.convert("XLIV");
-        Assertions.assertEquals(44, result);
+        Assertions.assertEquals(45, result);
     }
 }
